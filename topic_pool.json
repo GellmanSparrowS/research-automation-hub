@@ -17,7 +17,9 @@
       "Reference management: bibtexparser",
       "Automation: invoke, fabric",
       "Getting started in 10 minutes"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-06-26T10:34:07.942304"
   },
   {
     "title": "How to Write Your First Academic Paper with LaTeX and Overleaf",
@@ -37,9 +39,7 @@
       "Building tables with booktabs",
       "Managing references with BibTeX",
       "Common LaTeX errors and how to fix them"
-    ],
-    "published": true,
-    "published_date": "2026-06-25T15:46:17.926599"
+    ]
   },
   {
     "title": "Automated Data Visualization for Materials Science",
@@ -103,7 +103,7 @@
       "Weekly review workflow"
     ],
     "published": true,
-    "published_date": "2026-06-25T15:38:09.307138"
+    "published_date": "2026-06-26T10:34:07.941217"
   },
   {
     "title": "Machine Learning for Materials Discovery: Getting Started Guide",
@@ -164,9 +164,7 @@
       "Using AI tools for paper summarization",
       "Organizing your reading notes for future recall",
       "When to read deeply vs when to move on"
-    ],
-    "published": true,
-    "published_date": "2026-06-25T15:38:09.307103"
+    ]
   },
   {
     "title": "Git for Researchers: Version Control for Papers and Code",
@@ -208,7 +206,9 @@
       "Automated statistical analysis",
       "Figure generation with consistent styling",
       "Generating automated PDF reports"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-06-26T10:34:07.941866"
   },
   {
     "title": "How to Choose a Research Topic That Leads to Publications",
@@ -227,9 +227,7 @@
       "Using bibliometric tools to assess topic trends",
       "Talking to your advisor about topic selection",
       "Pivoting when a topic is not working"
-    ],
-    "published": true,
-    "published_date": "2026-06-25T15:38:23.213918"
+    ]
   },
   {
     "title": "Building a Personal Academic Website in One Afternoon",
@@ -272,7 +270,7 @@
       "Integrating with Jupyter and computational clusters"
     ],
     "published": true,
-    "published_date": "2026-06-25T15:46:17.926292"
+    "published_date": "2026-06-26T10:34:07.940670"
   },
   {
     "title": "Writing Effective Peer Reviews: A Guide for Early-Career Researchers",
@@ -397,9 +395,7 @@
       "Phase identification using reference databases",
       "Crystallite size calculation with Scherrer equation",
       "Batch processing hundreds of XRD files"
-    ],
-    "published": true,
-    "published_date": "2026-06-25T15:47:05.457838"
+    ]
   },
   {
     "title": "Using AI to Polish Your Academic English Writing",
@@ -483,7 +479,9 @@
       "Navigating conflict and difficult conversations",
       "Building independence while staying aligned",
       "When and how to change advisors if needed"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-06-26T10:34:07.940923"
   },
   {
     "title": "Automated SEM Image Analysis: Particle Size and Morphology",
@@ -589,7 +587,9 @@
       "Writing a cover letter that gets read",
       "Responding to reviewer comments strategically",
       "What to do if rejected: the revision and resubmit playbook"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-06-26T10:34:07.942603"
   },
   {
     "title": "Using Large Language Models for Literature Review and Hypothesis Generation",
