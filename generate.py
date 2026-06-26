@@ -9,7 +9,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 CONTENT_DIR = BASE_DIR / "content"
-OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_DIR = BASE_DIR / "docs"
 TEMPLATE_DIR = BASE_DIR / "templates"
 
 SITE_TITLE = "Research Automation Hub"
@@ -52,12 +52,12 @@ def base_template(title, content, meta_desc="", canonical=""):
 </head>
 <body>
 <header>
-  <h1><a href="/" style="color:inherit;text-decoration:none">{SITE_TITLE}</a></h1>
+  <h1><a href="index.html" style="color:inherit;text-decoration:none">{SITE_TITLE}</a></h1>
   <p>{SITE_DESC}</p>
   <nav>
-    <a href="/">Home</a>
-    <a href="/tools.html">Tools</a>
-    <a href="/blog.html">Blog</a>
+    <a href="index.html">Home</a>
+    <a href="tools.html">Tools</a>
+    <a href="blog.html">Blog</a>
   </nav>
 </header>
 <main>{content}</main>
@@ -153,7 +153,7 @@ def build():
     cards = ""
     for p in posts[:10]:
         cards += f"""<div class="post-card">
-  <h3><a href="/blog/{p.get('slug','')}.html">{p.get('title','')}</a></h3>
+  <h3><a href="blog/{p.get('slug','')}.html">{p.get('title','')}</a></h3>
   <time>{p.get('date','')}</time>
   <p>{p.get('description','')}</p>
 </div>\n"""
@@ -183,7 +183,7 @@ def build():
 <li><strong>Overleaf</strong> — Collaborative LaTeX editor</li>
 </ul>
 <h3>Automation Scripts</h3>
-<p>Check out our <a href="/blog.html">blog</a> for free Python scripts to automate your research workflow.</p>""",
+<p>Check out our <a href="blog.html">blog</a> for free Python scripts to automate your research workflow.</p>""",
         meta_desc="Best tools and automation scripts for academic researchers",
     )
     with open(OUTPUT_DIR / "tools.html", "w", encoding="utf-8") as f:
