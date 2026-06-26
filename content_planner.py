@@ -276,83 +276,87 @@ def save_topics(topics):
         json.dump(topics, f, indent=2)
 
 
+# -*- coding: utf-8 -*-
+"""Rich content generator for blog posts."""
 def _simple_md(title, desc, outline):
-    """Generate a clean markdown blog post from outline."""
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = __import__("datetime").datetime.now().strftime("%Y-%m-%d")
     slug = title.lower().replace(" ", "-").replace("?", "").replace(",", "")
     slug = "".join(c for c in slug if c.isalnum() or c == "-")
-
+    intros = [
+        "Every researcher hits this wall. Whether wrestling with a literature review or automating data processing, the right approach saves dozens of hours. This guide covers techniques tested in real academic workflows.",
+        "Most PhD students discover too late that productivity is about working smarter, not harder. The difference between finishing on time and burning out often comes down to a handful of workflow improvements. This guide shows you exactly what to change.",
+    ]
+    body = [
+        "Start by tracking where your time actually goes. For one week, note every task that feels mechanical: renaming files, reformatting citations, converting data between formats, adjusting figure margins. Those are your automation targets. Pick the most frequent one first. Automating a 20-minute daily task saves over 120 hours per year.",
+        "Build incrementally. The biggest mistake is trying to automate everything at once. Write one script. Use it for a week. Refine the rough edges. Then tackle the next bottleneck. Within a month you will have a personalized toolkit that runs while you focus on actual research.",
+        "The tools you need are already on your computer. Python standard library handles most automation. Pandas processes tabular data in seconds. PyMuPDF extracts content from hundreds of papers. You do not need to learn anything radically new, just apply what you know systematically.",
+        "Documentation is not optional. Every script you write today will need maintenance in six months, possibly during thesis deadline week. Add one-line comments describing what each function does. Use clear variable names. Future-you will be grateful.",
+        "Do not underestimate templates. Whether for email responses, experiment logs, meeting notes, or progress reports, having a ready structure eliminates decision fatigue. Create once, reuse hundreds of times. The cognitive load you save goes directly into creative research thinking.",
+        "Share your tools with your lab. When you build a useful script, pass it on. Collective efficiency compounds. A lab where everyone automates their repetitive tasks produces more papers with less burnout.",
+        "Measure the impact. After implementing a new tool or workflow, track how much time you save. Seeing concrete numbers keeps you motivated. A simple note like saved 45 minutes today adds up into a compelling case for investing in automation.",
+        "Resist the temptation to build complex systems from scratch. The best automation is simple and invisible. A five-line Python script that runs daily is infinitely more valuable than an elaborate GUI application you never finish. Ship the simplest version that works, then iterate.",
+    ]
+    concs = [
+        "The most productive researchers systematically eliminate repetitive work. Pick one idea from this guide, implement it today, and build from there. Every hour invested in workflow pays back tenfold.",
+        "Smart tooling and automation are survival skills for modern researchers. Start small, iterate fast, and share what works. Your future self will look back on this moment as the turning point.",
+    ]
+    import random as _r
     lines = [
         "---",
-        f'title: "{title}"',
-        f'date: "{today}"',
-        f'slug: "{slug}"',
-        f'description: "{desc}"',
+        "title: " + title,
+        "date: " + today,
+        "slug: " + slug,
+        "description: " + desc,
         "---",
         "",
+        _r.choice(intros),
+        "",
     ]
-    for i, point in enumerate(outline):
-        lines.append(f"## {point}")
-        # Generate a short paragraph for each outline point
+    for point in outline:
+        lines.append("## " + point)
         lines.append("")
-        if i == 0:
-            lines.append(
-                f"Every researcher faces this challenge. Whether you are a first-year PhD student "
-                f"or a seasoned postdoc, {point.lower().rstrip('?')} is something worth getting right. "
-                f"This guide covers practical approaches you can apply today."
-            )
-        elif i == len(outline) - 1:
-            lines.append(
-                f"In summary, {point.lower().rstrip('?')} brings everything together. "
-                f"Start small, iterate, and build systems that work for your specific research workflow. "
-                f"The tools and techniques described here will save you significant time over the course of your PhD."
-            )
-        else:
-            lines.append(
-                f"When approaching {point.lower()}, start by identifying your specific needs. "
-                f"Different research fields and workflows require different solutions. "
-                f"Experiment with the methods described, measure what works, and adapt accordingly."
-            )
-        lines.append("")
-
+        used = []
+        for i in range(3):
+            pool = [p for p in body if p not in used]
+            if not pool:
+                pool = body
+            p = _r.choice(pool)
+            used.append(p)
+            lines.append(p)
+            lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append(_r.choice(concs))
+    lines.append("")
     return "\n".join(lines), slug
 
-
 def generate_posts(count=1, dry_run=False):
-    """Generate `count` new blog posts from the topic pool."""
     topics = load_topics()
     available = [t for t in topics if not t.get("published", False)]
-
     if not available:
-        print("[planner] All topics published. Reset pool and regenerate.")
         for t in topics:
             t["published"] = False
         available = topics
-
     generated = []
+    import random
+    import datetime as _dt
     for _ in range(min(count, len(available))):
         topic = random.choice(available)
         available.remove(topic)
-
-        title = topic["title"].format(year=datetime.now().year)
+        title = topic["title"].format(year=_dt.datetime.now().year)
         md, slug = _simple_md(title, topic["description"], topic["outline"])
-
-        filepath = CONTENT_DIR / f"{slug}.md"
-
+        filepath = CONTENT_DIR / (slug + ".md")
         if dry_run:
-            print(f"[DRY RUN] Would write: {filepath.name}")
+            print("[DRY RUN] Would write: " + filepath.name)
         else:
-            with open(filepath, "w", encoding="utf-8") as f:
+            with open(str(filepath), "w", encoding="utf-8") as f:
                 f.write(md)
-            print(f"[planner] Generated: {filepath.name}")
-
+            print("[planner] Generated: " + filepath.name)
         topic["published"] = True
-        topic["published_date"] = datetime.now().isoformat()
+        topic["published_date"] = _dt.datetime.now().isoformat()
         generated.append(slug)
-
     save_topics(topics)
     return generated
-
 
 def main():
     import argparse
