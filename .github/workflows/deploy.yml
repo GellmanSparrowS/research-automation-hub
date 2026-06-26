@@ -2,45 +2,27 @@ name: Weekly Blog Deploy
 
 on:
   schedule:
-    - cron: "0 8 * * 1"  # Every Monday at 08:00 UTC
-  workflow_dispatch:       # Manual trigger
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
 
 jobs:
   generate-and-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
-      id-token: write
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Generate new blog post
         run: python content_planner.py --count 1
-
-      - name: Configure git
+      - name: Rebuild static site
+        run: python generate.py
+      - name: Commit and push
         run: |
           git config user.name "Blog Bot"
           git config user.email "bot@research-automation-hub.dev"
-
-      - name: Commit and push
-        run: |
-          git add content/posts/ topic_pool.json
-          git commit -m "auto: weekly blog post $(date +'%Y-%m-%d')" || echo "No changes"
+          git add content/posts/ topic_pool.json docs/
+          git commit -m "auto: weekly blog post" || echo "No changes"
           git push
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: output/
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
