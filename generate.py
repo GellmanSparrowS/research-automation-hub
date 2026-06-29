@@ -105,7 +105,8 @@ def parse_md(filepath):
                 if in_list: html.append(f"</{list_type}>")
                 html.append("<ol>")
                 in_list = True; list_type = "ol"
-            html.append(f"<li>{_inline(re.sub(r'^\d+\.\s*', '', line))}</li>")
+            stripped = re.sub(r'^\d+\.\s*', '', line)
+            html.append(f"<li>{_inline(stripped)}</li>")
         elif line.strip() == "":
             if in_list: html.append(f"</{list_type}>"); in_list = False
         else:
