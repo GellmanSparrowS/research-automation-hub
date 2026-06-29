@@ -437,7 +437,9 @@
       "Detecting research communities with clustering",
       "Visualizing the network with matplotlib and plotly",
       "Using the graph to guide your literature review"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-06-29T12:39:59.552105"
   },
   {
     "title": "From Lab Notebook to Published Figure: A Data-to-Figure Pipeline",
