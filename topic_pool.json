@@ -249,7 +249,9 @@
       "Adding your publication list automatically from BibTeX",
       "SEO tips so people find your page",
       "Updating your site painlessly"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-02T10:47:11.231850"
   },
   {
     "title": "Reproducible Research: Docker and Conda Environments for Scientists",
