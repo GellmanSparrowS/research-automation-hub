@@ -511,7 +511,9 @@
       "Generating size distribution histograms",
       "Handling overlapping particles with watershed",
       "Batch processing and reporting for large datasets"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-03T10:44:22.114390"
   },
   {
     "title": "Surviving Your First Conference Presentation",
