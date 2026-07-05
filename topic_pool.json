@@ -339,7 +339,9 @@
       "Transfer learning with limited labeled data",
       "Tools: PyTorch, fastai, and ImageJ integration",
       "Publishing ML-enhanced materials characterization"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-05T10:22:59.815402"
   },
   {
     "title": "How to Write a Compelling Abstract That Gets Accepted",
