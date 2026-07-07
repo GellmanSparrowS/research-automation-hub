@@ -625,7 +625,9 @@
       "Retrieval-augmented generation for accurate citations",
       "Combining LLMs with knowledge graphs",
       "Ethical considerations and best practices"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-07T11:14:35.598001"
   },
   {
     "title": "Building a Daily Writing Habit as a Researcher",
