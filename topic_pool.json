@@ -363,7 +363,9 @@
       "Common abstract mistakes and how to fix them",
       "Abstract examples from top journals analyzed",
       "Checklist before you submit"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-09T11:16:17.133444"
   },
   {
     "title": "Jupyter Notebooks for Reproducible Research: Best Practices",
