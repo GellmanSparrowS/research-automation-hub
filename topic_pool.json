@@ -39,7 +39,9 @@
       "Building tables with booktabs",
       "Managing references with BibTeX",
       "Common LaTeX errors and how to fix them"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-10T11:11:19.939958"
   },
   {
     "title": "Automated Data Visualization for Materials Science",
