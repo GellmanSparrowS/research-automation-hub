@@ -564,7 +564,9 @@
       "Open source tools for every stage of research",
       "Getting credit for your open science contributions",
       "Balancing openness with competition concerns"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-11T09:43:16.050224"
   },
   {
     "title": "Automating Grant Progress Reports with Python and LaTeX",
