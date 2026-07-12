@@ -388,7 +388,9 @@
       "Exporting notebooks to scripts for cluster runs",
       "Sharing notebooks: Binder, nbviewer, and GitHub",
       "From notebook to paper: the publication workflow"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-12T09:56:29.488872"
   },
   {
     "title": "Automating XRD Pattern Analysis with Python",
