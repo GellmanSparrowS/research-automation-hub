@@ -85,7 +85,9 @@
       "Script 8: Meeting notes generator",
       "Script 9-10: Report and figure automation",
       "How to run these on a schedule"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-14T10:04:19.051702"
   },
   {
     "title": "How to Build a Personal Research Knowledge Base with Notion",
