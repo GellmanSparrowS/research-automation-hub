@@ -436,7 +436,9 @@
       "Common grammar patterns that AI fixes well",
       "Ethics of AI-assisted academic writing",
       "Building a polishing workflow for your papers"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-16T10:16:20.073238"
   },
   {
     "title": "Building a Citation Network Graph with Python and NetworkX",
