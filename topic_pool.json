@@ -174,7 +174,9 @@
       "Using AI tools for paper summarization",
       "Organizing your reading notes for future recall",
       "When to read deeply vs when to move on"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-19T09:56:48.017154"
   },
   {
     "title": "Git for Researchers: Version Control for Papers and Code",
