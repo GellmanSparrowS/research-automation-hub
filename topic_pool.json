@@ -329,7 +329,9 @@
       "Handling overlapping content and self-citation",
       "Timeline: when to start converting",
       "Working with your advisor on co-authored papers"
-    ]
+    ],
+    "published": true,
+    "published_date": "2026-07-21T10:29:36.314270"
   },
   {
     "title": "Deep Learning for Image Analysis in Materials Science",
