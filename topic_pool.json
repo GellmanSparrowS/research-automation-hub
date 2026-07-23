@@ -18,7 +18,7 @@
       "Automation: invoke, fabric",
       "Getting started in 10 minutes"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-26T10:34:07.942304"
   },
   {
@@ -40,7 +40,7 @@
       "Managing references with BibTeX",
       "Common LaTeX errors and how to fix them"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-10T11:11:19.939958"
   },
   {
@@ -63,7 +63,7 @@
       "Exporting for journals: resolution and format",
       "Automating figure generation for multiple samples"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-01T11:29:42.789397"
   },
   {
@@ -86,7 +86,7 @@
       "Script 9-10: Report and figure automation",
       "How to run these on a schedule"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-14T10:04:19.051702"
   },
   {
@@ -108,7 +108,7 @@
       "Connecting everything with relations",
       "Weekly review workflow"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-26T10:34:07.941217"
   },
   {
@@ -131,7 +131,7 @@
       "Evaluating model performance",
       "Deploying models for high-throughput screening"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-04T10:17:40.333589"
   },
   {
@@ -153,7 +153,7 @@
       "Figure preparation: Inkscape and GIMP",
       "Putting it all together: a free writing workflow"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-17T10:04:34.608471"
   },
   {
@@ -175,31 +175,8 @@
       "Organizing your reading notes for future recall",
       "When to read deeply vs when to move on"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-19T09:56:48.017154"
-  },
-  {
-    "title": "Git for Researchers: Version Control for Papers and Code",
-    "slug": "git-for-researchers",
-    "description": "Why every researcher should use Git, and how to version-control your papers, data, and analysis scripts without the complexity.",
-    "keywords": [
-      "git",
-      "version control",
-      "reproducible research",
-      "github",
-      "collaboration"
-    ],
-    "outline": [
-      "Why Git is essential for reproducible research",
-      "Setting up Git in 5 minutes",
-      "Version-controlling your paper drafts",
-      "Managing data and experiment versions",
-      "Collaborating with co-authors via GitHub",
-      "Using branches for manuscript revisions",
-      "GitHub releases for paper submissions"
-    ],
-    "published": true,
-    "published_date": "2026-07-22T10:30:43.138178"
   },
   {
     "title": "Automated Experiment Data Processing Pipeline in Python",
@@ -221,7 +198,7 @@
       "Figure generation with consistent styling",
       "Generating automated PDF reports"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-26T10:34:07.941866"
   },
   {
@@ -242,7 +219,7 @@
       "Talking to your advisor about topic selection",
       "Pivoting when a topic is not working"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-08T10:25:11.541482"
   },
   {
@@ -264,7 +241,7 @@
       "SEO tips so people find your page",
       "Updating your site painlessly"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-02T10:47:11.231850"
   },
   {
@@ -287,7 +264,7 @@
       "Publishing containers on Docker Hub",
       "Integrating with Jupyter and computational clusters"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-26T10:34:07.940670"
   },
   {
@@ -309,7 +286,7 @@
       "How long should a review take?",
       "Building a reviewer profile and getting invited"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-20T11:07:28.709782"
   },
   {
@@ -332,7 +309,7 @@
       "Timeline: when to start converting",
       "Working with your advisor on co-authored papers"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-21T10:29:36.314270"
   },
   {
@@ -356,7 +333,7 @@
       "Tools: PyTorch, fastai, and ImageJ integration",
       "Publishing ML-enhanced materials characterization"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-05T10:22:59.815402"
   },
   {
@@ -378,7 +355,7 @@
       "Abstract examples from top journals analyzed",
       "Checklist before you submit"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-09T11:16:17.133444"
   },
   {
@@ -401,7 +378,7 @@
       "Sharing notebooks: Binder, nbviewer, and GitHub",
       "From notebook to paper: the publication workflow"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-12T09:56:29.488872"
   },
   {
@@ -424,7 +401,7 @@
       "Crystallite size calculation with Scherrer equation",
       "Batch processing hundreds of XRD files"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-13T11:19:57.683331"
   },
   {
@@ -447,7 +424,7 @@
       "Ethics of AI-assisted academic writing",
       "Building a polishing workflow for your papers"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-16T10:16:20.073238"
   },
   {
@@ -470,7 +447,7 @@
       "Visualizing the network with matplotlib and plotly",
       "Using the graph to guide your literature review"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-29T12:39:59.552105"
   },
   {
@@ -493,7 +470,7 @@
       "Adding statistical annotations automatically",
       "Exporting at the right resolution for target journals"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-30T11:15:09.764422"
   },
   {
@@ -516,7 +493,7 @@
       "Building independence while staying aligned",
       "When and how to change advisors if needed"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-26T10:34:07.940923"
   },
   {
@@ -540,7 +517,7 @@
       "Handling overlapping particles with watershed",
       "Batch processing and reporting for large datasets"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-03T10:44:22.114390"
   },
   {
@@ -562,7 +539,7 @@
       "Networking at conferences without being awkward",
       "What to do after the conference to maximize impact"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-18T09:39:26.924507"
   },
   {
@@ -585,7 +562,7 @@
       "Getting credit for your open science contributions",
       "Balancing openness with competition concerns"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-11T09:43:16.050224"
   },
   {
@@ -609,7 +586,7 @@
       "LaTeX template for funding agency reports",
       "Setting up a quarterly report generation pipeline"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-15T10:08:37.864346"
   },
   {
@@ -632,7 +609,7 @@
       "Responding to reviewer comments strategically",
       "What to do if rejected: the revision and resubmit playbook"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-06-26T10:34:07.942603"
   },
   {
@@ -656,7 +633,7 @@
       "Combining LLMs with knowledge graphs",
       "Ethical considerations and best practices"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-07T11:14:35.598001"
   },
   {
@@ -679,7 +656,7 @@
       "Writing groups and accountability partners",
       "From daily writing to finished manuscripts"
     ],
-    "published": true,
+    "published": false,
     "published_date": "2026-07-06T12:09:59.586633"
   }
 ]
