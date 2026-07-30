@@ -424,8 +424,8 @@
       "Ethics of AI-assisted academic writing",
       "Building a polishing workflow for your papers"
     ],
-    "published": false,
-    "published_date": "2026-07-16T10:16:20.073238"
+    "published": true,
+    "published_date": "2026-07-30T10:30:28.078468"
   },
   {
     "title": "Building a Citation Network Graph with Python and NetworkX",
