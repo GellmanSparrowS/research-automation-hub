@@ -378,8 +378,8 @@
       "Sharing notebooks: Binder, nbviewer, and GitHub",
       "From notebook to paper: the publication workflow"
     ],
-    "published": false,
-    "published_date": "2026-07-12T09:56:29.488872"
+    "published": true,
+    "published_date": "2026-08-21T08:48:29.579174"
   },
   {
     "title": "Automating XRD Pattern Analysis with Python",
