@@ -175,8 +175,8 @@
       "Organizing your reading notes for future recall",
       "When to read deeply vs when to move on"
     ],
-    "published": false,
-    "published_date": "2026-08-01T10:04:02.793789"
+    "published": true,
+    "published_date": "2026-08-29T13:44:56.023667"
   },
   {
     "title": "Automated Experiment Data Processing Pipeline in Python",
