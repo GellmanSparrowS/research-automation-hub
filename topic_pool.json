@@ -562,8 +562,8 @@
       "Getting credit for your open science contributions",
       "Balancing openness with competition concerns"
     ],
-    "published": false,
-    "published_date": "2026-08-09T08:51:16.792277"
+    "published": true,
+    "published_date": "2026-09-02T12:40:41.795251"
   },
   {
     "title": "Automating Grant Progress Reports with Python and LaTeX",
