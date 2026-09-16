@@ -447,8 +447,8 @@
       "Visualizing the network with matplotlib and plotly",
       "Using the graph to guide your literature review"
     ],
-    "published": false,
-    "published_date": "2026-07-27T11:31:10.640824"
+    "published": true,
+    "published_date": "2026-09-16T13:20:05.596429"
   },
   {
     "title": "From Lab Notebook to Published Figure: A Data-to-Figure Pipeline",
