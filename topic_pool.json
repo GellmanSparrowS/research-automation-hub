@@ -264,8 +264,8 @@
       "Publishing containers on Docker Hub",
       "Integrating with Jupyter and computational clusters"
     ],
-    "published": false,
-    "published_date": "2026-09-17T13:16:26.075720"
+    "published": true,
+    "published_date": "2026-10-07T15:24:27.514076"
   },
   {
     "title": "Writing Effective Peer Reviews: A Guide for Early-Career Researchers",
