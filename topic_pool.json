@@ -355,8 +355,8 @@
       "Abstract examples from top journals analyzed",
       "Checklist before you submit"
     ],
-    "published": false,
-    "published_date": "2026-08-28T20:07:23.762393"
+    "published": true,
+    "published_date": "2026-10-10T14:22:47.021845"
   },
   {
     "title": "Jupyter Notebooks for Reproducible Research: Best Practices",
