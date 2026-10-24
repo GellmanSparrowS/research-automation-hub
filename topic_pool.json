@@ -401,8 +401,8 @@
       "Crystallite size calculation with Scherrer equation",
       "Batch processing hundreds of XRD files"
     ],
-    "published": false,
-    "published_date": "2026-09-27T13:45:55.818407"
+    "published": true,
+    "published_date": "2026-10-24T12:32:57.107916"
   },
   {
     "title": "Building a Citation Network Graph with Python and NetworkX",
