@@ -241,8 +241,8 @@
       "SEO tips so people find your page",
       "Updating your site painlessly"
     ],
-    "published": false,
-    "published_date": "2026-10-12T17:39:12.300274"
+    "published": true,
+    "published_date": "2026-11-11T15:58:49.719331"
   },
   {
     "title": "Reproducible Research: Docker and Conda Environments for Scientists",
